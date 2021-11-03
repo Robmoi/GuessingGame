@@ -39,6 +39,7 @@ public class Guesser{
     rules();
     // call the doGuesses() method here
     doGuesses();
+    getReply();
   }
 
   private void rules(){
@@ -62,6 +63,11 @@ public class Guesser{
   private String getReply(){
     String reply = null;
     // Write code here which reads a String from the console.
+    Scanner scanner = new Scanner(System.in);
+    reply = scanner.nextLine();
+    while(!(reply.equals("T") || reply.equals("F"))){
+      System.out.println("Error! Please anwser T or F");
+      reply = scanner.nextLine();
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
     // When you have gotten a valid reply, return it.
