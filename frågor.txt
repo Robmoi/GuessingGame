@@ -1,0 +1,21 @@
+1.När man använder kommandot ”git add”” då lägger man till filen i så kallad
+“staging area” där filen sedan väntar på att bli “commited”. Man behöver köra
+“git add” innan man ska vill commita. Om en fil är i “staging area” kan man
+köra “git commit” då tar man en s.k snapshot av filen och då sparas filens
+befintliga innehåll.
+2.Push -  är ett kommando som man kör efter sin commit. “git push” pushar upp filen till github. Med andra ord så skickas filen iväg till github och sparas där i en repository som man har skapat.
+
+Pull - kommandot används för att komma åt ändringarna (commits) från ett 
+remote repository till det lokala repository.
+3. log används som en historik för dina commits, alltså att man kan  hålla koll 
+på dom commits som man har gjort.
+
+Status - bra att använda under arbetets gång, så man ser att allt är rätt gjort.
+ex när man ska pusha upp något till github så är det bra att använda git status emellan alla steg, man kan köra git status efter git add och git commit för att 
+kolla så allt funkar som det ska.
+4. kommandot till det är “git commit -m “. det är bra att göra en kort och klar 
+beskrivning på det viktigaste man har gjort hittills. Jag kan ta ett exempel från
+ Guessing Game koden. När jag gjorde klart while loopen så committade jag 
+och skrev “added a while loop” meddelanden kan vara lite mer komplexa än 
+så men i Guessing Game exemplet tycker jag att en sådan kommentar passar bra!
+
